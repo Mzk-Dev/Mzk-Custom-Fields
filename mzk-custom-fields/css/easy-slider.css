@@ -1,0 +1,228 @@
+.bg{
+  background-position:center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.easy_slider{
+    overflow: hidden;
+}
+
+.easy_slider_wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.easy_slider_container{
+    padding: 0 15px;
+}
+
+.easy_slider_signature{
+    padding-top: 100px;
+}
+
+.easy_slider_one_slide{
+    height: 410px;
+    width: 100%;
+}
+
+.easy_slider .slick-arrow{
+    position: absolute;
+    display: inline-block;
+    width: 34px;
+    height: 56px;
+    top: 50%;
+    margin-top: -27px;
+    z-index: 1;
+    text-indent: -999999px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.easy_slider .slick-prev{
+    left: 0;
+    background-image: url(../images/left-arrow.png);
+}
+
+.easy_slider .slick-next{
+    right: 0;
+    background-image: url(../images/right-arrow.png);
+}
+
+.easy_slider .slick-dots{
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.easy_slider .slick-dots ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.easy_slider .slick-dots li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-right: 10px;
+    background-image: none;
+}
+
+.easy_slider .slick-dots li button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/dot.png);
+    border: 0;
+    outline: none;
+    text-indent: 99999px;
+    padding: 0;
+    height: 6px;
+    width: 16px;
+}
+
+.easy_slider .slick-dots .slick-active button{
+    background-image: url(../images/dot-active.png);
+}
+
+.easy_slider_title{
+    font-size: 36px;
+    line-height: 1.8;
+    color: white;
+    text-transform: uppercase;
+}
+
+.easy_slider_subtitle{
+    font-size: 24px;
+    color: white;
+    line-height: 1.6;
+}
+
+.easy_slider_content{
+    font-size: 16px;
+    color: white;
+}
+
+/*lightbox*/
+.easy_slider_gallery ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    margin: 0;
+    overflow: hidden;
+}
+
+.easy_slider_gallery ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    float: left;
+    margin: 15px;
+}
+
+.easy_slider_gallery ul li a{
+    display: inline-block;
+}
+
+
+.easy_slider_one_img{
+    width: 250px;
+    height: 300px;
+}
+
+.attachment.details .check div {
+    background-position: -60px 0;
+}
+
+.attachment.details .check:hover div {
+    background-position: -60px 0;
+}
+
+.gallery_images .details.attachment {
+    box-shadow: none;
+    width: 100%;
+}
+
+.eig-metabox-sortable-placeholder {
+    background: #DFDFDF;
+}
+
+/*	.gallery_images .attachment.details > div {
+    
+    box-shadow: none;
+}*/
+
+.gallery_images .attachment-preview .thumbnail {
+    cursor: move;
+    width: 150px;
+    height: 150px;
+}
+
+.attachment.details div:hover .check {
+    display:block;
+}
+
+.gallery_images:after,
+#gallery_images_container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.gallery_images > li {
+    float: left;
+    cursor: move;
+    margin: 0 20px 20px 0;
+}
+
+.gallery_images li.image img {
+    width: 150px;
+    height: auto;
+}
+
+/*        .wp-core-ui .attachment .thumbnail img {
+    left: 50%;
+    margin-left: -75px;
+}*/
+
+.slider_desc table{
+    width: 100%;
+}
+
+.slider_desc input[type="text"],
+.slider_desc textarea
+{
+    width: 100%;
+}
+
+
+.slider_desc{
+    margin-left: 170px;
+    text-align: left;
+    position: relative;
+}
+
+.wp-core-ui #gallery_images_container .attachment .thumbnail{
+    width: 150px;
+    height: 150px;
+       position: static;
+       float: left;
+}
+
+.wp-core-ui #gallery_images_container .attachment .thumbnail img{
+    position: static;
+}
+
+.wp-core-ui #gallery_images_container .attachment-preview:before{
+    padding-top: 160px;
+    display: none;
+}
+
+.wp-core-ui #gallery_images_container .attachment-preview{
+    padding: 20px;
+    overflow: hidden;
+}
