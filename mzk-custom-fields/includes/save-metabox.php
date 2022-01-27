@@ -71,10 +71,19 @@ function mzk_save_slider($post_id , $meta_key){
     $content = $_POST["$key" . "_content"];
  
 
-    for($i = 0; $i < count($number); $i++) {
-      $meta_val[$i] = array('key' => "$key" . "_subtitle" ,'image_id' => $attachment[$i]  , 'image_title' => $title[$i], 'image_subtitle' => $subtitle[$i] , 'button_name' => $name[$i], 'button_link' => $link[$i] , 'image_signature'=>$signature[$i] ,'image_content' =>$content[$i]  );
-    }
-    $meta_value = json_encode($meta_val);
+      if(is_array($number)){
+      for($i = 0; $i < count($number); $i++) {
+        $meta_val[$i] = array('key' => "$key" . "_subtitle" ,'image_id' => $attachment[$i]  , 'image_title' => $title[$i], 'image_subtitle' => $subtitle[$i] , 'button_name' => $name[$i], 'button_link' => $link[$i] , 'image_signature'=>$signature[$i] ,'image_content' =>$content[$i]  );
+      }
+    }else{
+      if($number){
+       $meta_val[0] = array('key' => "$key" . "_subtitle" ,'image_id' => $attachment[0]  , 'image_title' => $title[0], 'image_subtitle' => $subtitle[0] , 'button_name' => $name[0], 'button_link' => $link[0] , 'image_signature'=>$signature[0] ,'image_content' =>$content[0]  );
+        }else{
+          $meta_val = '';
+        }
+      }
+    
+    $meta_value = json_encode($meta_val , JSON_UNESCAPED_UNICODE);
     // $meta_value = $_POST[$meta_key] ?? '';
     update_post_meta($post_id, $meta_key , ($meta_value) );
   
