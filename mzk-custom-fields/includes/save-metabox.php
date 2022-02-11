@@ -79,7 +79,7 @@ function mzk_save_slider($post_id , $meta_key){
       if($number){
        $meta_val[0] = array('key' => "$key" . "_subtitle" ,'image_id' => $attachment[0]  , 'image_title' => $title[0], 'image_subtitle' => $subtitle[0] , 'button_name' => $name[0], 'button_link' => $link[0] , 'image_signature'=>$signature[0] ,'image_content' =>$content[0]  );
         }else{
-          $meta_val = '';
+          $meta_val = null;
         }
       }
     
