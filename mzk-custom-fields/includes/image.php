@@ -2,6 +2,7 @@
 function mzk_add_image($post_id, $meta_key, $label){
   $meta_value = get_post_meta( $post_id, $meta_key, true );
   ?>
+<div class="inside">
   <label for="<?php echo $meta_key;?>" style="display:block;"><strong><?php echo $label ?> :</strong></label>
   <?php 
   if($meta_value){
@@ -14,6 +15,7 @@ function mzk_add_image($post_id, $meta_key, $label){
     <a href="#" class="rmv" style="display:none;padding:20px 0;">Remove image</a>
     <input type="hidden" name="<?php echo $meta_key;?>" value="">
   <?php } ?>
+</div>
   <script>
     jQuery(function($){
     // on upload button click
