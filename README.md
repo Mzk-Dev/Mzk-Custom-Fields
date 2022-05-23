@@ -59,6 +59,7 @@ For slider and video saving you need two other functions:<br>
 <br>
 To take the values of custom fields in your files use the standard function :<br>
 * get_post_meta( int $post_id, string $meta_key = '', bool $single = false );<br>
+* for slider use $slider = json_decode(get_post_meta($post->ID , $meta_key , true));
 Parameters #<br>
 $post_id<br>
 (int) (Required) Post ID.<br>
