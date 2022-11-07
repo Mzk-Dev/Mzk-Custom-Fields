@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!function_exists('header200')) {
   function header200()
   {
@@ -30,6 +30,6 @@ if (!function_exists('header404')) {
 if (!function_exists('header_json')) {
   function header_json()
   {
-    header('Content-Type: application/json');  }
+    header('Content-Type: application/json');
+  }
 }
-
