@@ -72,7 +72,7 @@ function mzk_save_slider($post_id, $meta_key)
     }
   }
 
-  $meta_value = json_encode($meta_val, JSON_UNESCAPED_UNICODE);
+  $meta_value = json_encode($meta_val, JSON_UNESCAPED_UNICODE | JSON_HEX_APOS);
   // $meta_value = $_POST[$meta_key] ?? '';
   update_post_meta($post_id, $meta_key, ($meta_value));
 }
